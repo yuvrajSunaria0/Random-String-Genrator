@@ -25,7 +25,7 @@ function App() {
     
 
   }, [length, numberAllowed, characterAllowed])
-  const lund =useCallback(()=>{
+  const lud =useCallback(()=>{
     passwordref.current?.select()
     window.navigator.clipboard.writeText(password)},[password]);
     
@@ -39,7 +39,7 @@ function App() {
         <div className="text-3xl font-bold ">Password genrator</div>
         <div>
           <input ref={passwordref}type="text" className="lol outline-none w-full my-1 py-1 px-3 bg-amber-50 text-black " value={password} />
-          <button onClick={lund} className='lol outline-none bg-blue-400 text-white py-1 px-1 my-1'
+          <button onClick={lud} className='lol outline-none bg-blue-400 text-white py-1 px-1 my-1'
            >COPY</button>
         </div>
         <div className=' flex justify-between'>
